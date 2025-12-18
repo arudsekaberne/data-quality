@@ -1,46 +1,41 @@
-# Data-Quality
+# data-quality
 
 ## 🚀 Overview
-The Data-Quality project is designed to ensure the integrity and reliability of data across various databases and APIs. It leverages Great Expectations for data validation and provides comprehensive logging and alerting mechanisms to notify stakeholders of any issues. This project is ideal for data engineers, data scientists, and anyone responsible for maintaining data quality.
+The `data-quality` project is designed to ensure the integrity and reliability of data across various databases and APIs. It leverages Great Expectations for data validation and provides comprehensive logging and alerting mechanisms to notify stakeholders of any issues. This project is ideal for data engineers, and anyone responsible for maintaining data quality.
 
 ## ✨ Features
-- **Data Validation**: Validate data against predefined expectations using Great Expectations.
 - **Database Support**: Supports MySQL and PostgreSQL databases.
+- **Data Validation**: Validate data against predefined expectations.
 - **Alerting**: Sends email and Teams notifications for job status updates.
 - **Extensible**: Easily extendable with custom validation rules and configurations.
 
 ## 🛠️ Tech Stack
 - **Programming Language**: Python
 - **Frameworks & Libraries**:
-  - Great Expectations
-  - SQLAlchemy
+  - Jinja2
   - Pandas
   - Requests
-  - Jinja2
-- **System Requirements**:
-  - Python 3.8+
-  - MySQL or PostgreSQL
-  - SMTP server for email notifications
+  - SQLAlchemy
+  - Great Expectations
 
 ## 📦 Installation
 
 ### Prerequisites
 - Python 3.8+
 - MySQL or PostgreSQL
-- SMTP server for email notifications
 
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Data-Quality.git
+git clone https://github.com/yourusername/data-quality.git
 
 # Navigate to the project directory and set up environment variables
-cd Data-Quality
+cd data-quality
 ```
 
 ## 📁 Project Structure
 ```
-Data-Quality/
+data-quality/
 ├── .env
 ├── main.py
 ├── dependencies/
@@ -127,5 +122,5 @@ Data-Quality/
 
 ## 🔧 Configuration
 - **Environment Variables**: Configure environment variables in the `.env` file.
-- **Configuration Files**: Use the `dependencies/entities/models/config_core_model.py` and `dependencies/entities/models/config_sub_model.py` files to define job and task configurations.
 - **Customization Options**: Extend the `dependencies/functions/checks` directory to add custom validation rules.
+- **Configuration Files**: Use the `dependencies/entities/models/config_core_model.py` and `dependencies/entities/models/config_sub_model.py` files to validate job and task configurations.
